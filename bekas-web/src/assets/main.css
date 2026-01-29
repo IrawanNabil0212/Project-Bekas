@@ -1,0 +1,45 @@
+@import './base.css';
+
+/* =========================================
+   1. GLOBAL RESET LAYOUT
+   (Wajib ada agar tampilan Full Screen rapi)
+   ========================================= */
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f6f8;
+  
+  /* Reset display agar tidak flex/center (bawaan Vue) */
+  display: block; 
+}
+
+#app {
+  width: 100%;
+  max-width: 100%; /* Pastikan full width */
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  
+  /* Reset display agar tidak grid (bawaan Vue) */
+  display: block; 
+}
+
+/* =========================================
+   2. STYLE LINK BAWAAN (Opsional)
+   ========================================= */
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
